@@ -63,7 +63,7 @@ def initialize():
     from modules.shared_cmd_options import cmd_opts
 
     from modules import codeformer_model
-    warnings.filterwarnings(action="ignore", category=UserWarning, module="torchvision.transforms.functional_tensor")
+    warnings.filterwarnings(action="ignore", category=UserWarning, module="torchvision.transforms.functional")
     codeformer_model.setup_model(cmd_opts.codeformer_models_path)
     startup_timer.record("setup codeformer")
 
